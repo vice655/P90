@@ -7,7 +7,7 @@ end
 
 if CLIENT then
    SWEP.PrintName = "P90"
-   SWEP.Slot      = 6 -- add 1 to get the slot number key
+   SWEP.Slot      = 2 -- add 1 to get the slot number key
 
    SWEP.ViewModelFOV  = 72
    SWEP.ViewModelFlip = true
@@ -21,9 +21,9 @@ SWEP.Base				= "weapon_tttbase"
 SWEP.HoldType			= "ar2"
 
 SWEP.Primary.Delay       = 0.07001
-SWEP.Primary.Recoil      = 1.3
+SWEP.Primary.Recoil      = 1.2
 SWEP.Primary.Automatic   = true
-SWEP.Primary.Damage      = 8
+SWEP.Primary.Damage      = 11
 SWEP.Primary.Cone        = 0.02
 SWEP.Primary.Ammo        = "smg1"
 SWEP.Primary.ClipSize    = 50
@@ -31,11 +31,11 @@ SWEP.Primary.ClipMax     = 100
 SWEP.Primary.DefaultClip = 50
 SWEP.Primary.Sound       = Sound( "Weapon_P90.Single" )
 
-SWEP.IronSightsPos = Vector( 6.05, -5, 2.4 )
+SWEP.IronSightsPos = Vector( 3.05, -5, 2.4 )
 SWEP.IronSightsAng = Vector( 2.2, -0.1, 0 )
 
-SWEP.ViewModel  = "models/weapons/v_rif_p90.mdl"
-SWEP.WorldModel = "models/weapons/w_rif_p90.mdl"
+SWEP.ViewModel  = "models/weapons/v_smg_p90.mdl"
+SWEP.WorldModel = "models/weapons/w_smg_p90.mdl"
 
 
 --- TTT config values
@@ -68,6 +68,7 @@ SWEP.NoSights = false
 if CLIENT then
    -- Path to the icon material
    SWEP.Icon = "VGUI/ttt/icon_citymayhem_p90"
+end
 
 -- Tell the server that it should download our icon to clients.
 if SERVER then
